@@ -16,8 +16,16 @@ const CreateButton = ({text}) => {
   )
 }
 
+const CreateImage = () => {
+  return (
+    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZA4TB0oBCOL3CW1jWNdfDmshskZ_8HK8tAw&s'>
+    </img>
+  )
+}
+
 root.render(
     <>
       <CreateButton text = "Hola" />
+      <CreateImage />
     </>
 )
