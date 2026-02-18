@@ -1,10 +1,23 @@
-import { StrictMode } from 'react'
+import { Fragment, StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { Twitter } from "@boxicons/react"
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+// function App() {
+//   return <button>Hola</button>
+// }
+
+const root = createRoot(document.getElementById('root'));
+
+const CreateButton = ({text}) => {
+  return (
+    <button>
+        <Twitter />{text}
+    </button>
+  )
+}
+
+root.render(
+    <>
+      <CreateButton text = "Hola" />
+    </>
 )
